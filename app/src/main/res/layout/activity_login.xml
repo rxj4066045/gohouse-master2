@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="注册"
+            android:textColor="#f00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:layout_margin="29dp"
+        android:textSize="25dp"
+        android:text="登录"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:text="手机号"
+            android:textColor="#999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_phone"
+                android:maxLength="25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_alignRight="@+id/et_phone"
+                android:src="@drawable/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:text="密码"
+            android:textColor="#999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_password"
+                android:maxLength="25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="隐藏"
+                android:layout_marginRight="10dp"
+                android:layout_alignRight="@+id/et_password"
+                android:src="@drawable/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:textColor="#999"
+        android:text="忘记密码？"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wxlogin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/nologin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

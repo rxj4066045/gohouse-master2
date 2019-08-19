@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="fragmentDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/translate_start_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_finish_out</item>
+    </style>
+
+
+</resources>

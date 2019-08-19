@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="RadiusImageView">
+        <attr name="riv_radius" format="dimension" />
+        <attr name="riv_left_top_corner_radius" format="dimension" />
+        <attr name="riv_right_top_corner_radius" format="dimension" />
+        <attr name="riv_left_bottom_corner_radius" format="dimension" />
+        <attr name="riv_right_bottom_corner_radius" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MaterialSpinner">
+        <attr name="ms_textsize" format="dimension"/>
+        <attr name="ms_textColor" format="color"/>
+        <attr name="ms_hint" format="string"/>
+        <attr name="ms_hintTextColor" format="color"/>
+        <attr name="ms_rightIconId" format="reference"/>
+        <attr name="ms_rightIconSize" format="dimension"/>
+        <attr name="ms_dividerHeight" format="dimension"/>
+        <attr name="ms_dividerColor" format="color"/>
+        <attr name="ms_isShowDivider" format="boolean"/>
+
+        <attr name="ms_item_textColor" format="color"/>
+        <attr name="ms_item_slectTextColor" format="color"/>
+        <attr name="ms_item_textSize" format="dimension"/>
+        <attr name="ms_itex_background" format="color"/>
+
+        <attr name="ms_rotation">
+            <enum name="rotation90" value="0"/>
+            <enum name="rotation180" value="1"/>
+        </attr>
+        <attr name="ms_rotationDuration" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MarkCheckBox">
+        <attr name="mcb_textColor" format="color"/>
+        <attr name="mcb_markText" format="string"/>
+        <attr name="mcb_markTextSize" format="dimension"/>
+    </declare-styleable>
+
+</resources>

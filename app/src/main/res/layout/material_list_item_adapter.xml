@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.gohouse.gohouse.ui.customView.ShapeImageView
+        android:id="@+id/material_list_item_adapter_image"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:siv_radius="3dp"
+        app:siv_shape="RoundRectangle" />
+
+
+    <TextView
+        android:id="@+id/material_list_item_adapter_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="名称+编号"
+        android:textColor="@color/gray_33"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/material_list_item_adapter_image"
+        app:layout_constraintTop_toTopOf="@+id/material_list_item_adapter_image" />
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="品牌："
+        android:textColor="@color/gray_aa"
+        android:textSize="11.5dp"
+        app:layout_constraintStart_toStartOf="@+id/material_list_item_adapter_name"
+        app:layout_constraintTop_toBottomOf="@+id/material_list_item_adapter_name" />
+
+    <TextView
+        android:id="@+id/material_list_item_adapter_brand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="品牌："
+        android:textColor="@color/gray_aa"
+        android:textSize="11.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview1"
+        app:layout_constraintTop_toBottomOf="@+id/material_list_item_adapter_name" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="数量："
+        android:textColor="@color/gray_aa"
+        android:textSize="11.5dp"
+        app:layout_constraintStart_toStartOf="@+id/material_list_item_adapter_name"
+        app:layout_constraintTop_toBottomOf="@+id/material_list_item_adapter_brand" />
+
+
+    <TextView
+        android:id="@+id/material_list_item_adapter_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="数量："
+        android:textColor="@color/gray_aa"
+        android:textSize="11.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview2"
+        app:layout_constraintTop_toBottomOf="@+id/material_list_item_adapter_brand" />
+
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="材质："
+        android:textColor="@color/gray_aa"
+        android:textSize="11.5dp"
+        app:layout_constraintStart_toStartOf="@+id/material_list_item_adapter_name"
+        app:layout_constraintTop_toBottomOf="@+id/material_list_item_adapter_num" />
+
+
+    <TextView
+        android:id="@+id/material_list_item_adapter_quality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="材质"
+        android:textColor="@color/gray_aa"
+        android:textSize="11.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview3"
+        app:layout_constraintTop_toBottomOf="@+id/material_list_item_adapter_num" />
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/gray_ee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/material_list_item_adapter_quality" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

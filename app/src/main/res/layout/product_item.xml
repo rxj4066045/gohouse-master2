@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="373dp">
+
+
+    <com.gohouse.gohouse.ui.customView.ShapeImageView
+        android:id="@+id/product_image"
+        android:layout_width="333dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="19dp"
+        android:src="@mipmap/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:siv_radius="8dp"
+        app:siv_shape="RoundRectangle" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="标题标题"
+        android:textColor="@color/gray_33"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/product_image"
+        app:layout_constraintTop_toBottomOf="@+id/product_image" />
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/black_33"
+        app:layout_constraintBottom_toBottomOf="@+id/product_name"
+        app:layout_constraintStart_toEndOf="@+id/product_name"
+        app:layout_constraintTop_toTopOf="@+id/product_name" />
+
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="¥0000.00"
+        android:textColor="@color/gray_33"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/product_name"
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="@+id/product_name" />
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人看过"
+        android:textColor="@color/gray_55"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/product_name"
+        app:layout_constraintEnd_toEndOf="@+id/product_image"
+        app:layout_constraintTop_toTopOf="@+id/product_name" />
+
+    <TextView
+        android:id="@+id/product_mun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textColor="@color/colorAccent"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/product_name"
+        app:layout_constraintEnd_toStartOf="@+id/textview1"
+        app:layout_constraintTop_toTopOf="@+id/product_name" />
+
+
+    <TextView
+        android:id="@+id/product_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/gray_aa"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/product_name"
+        app:layout_constraintTop_toBottomOf="@+id/product_name"
+        tools:text="标签|标签|标签" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

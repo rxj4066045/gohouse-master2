@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            app:contentScrim="#fff"
+            app:expandedTitleMarginBottom="100dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="我的家">
+
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="第一个固定(pin)"-->
+                <!--android:textSize="40sp"-->
+                <!--app:layout_collapseMode="pin" />-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="不设置,跟随滑动"-->
+                <!--android:textSize="40sp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:text="视察效果(parallax)"-->
+                <!--android:textSize="40sp"-->
+                <!--app:layout_collapseMode="parallax" />-->
+
+            <!--app:layout_collapseMode="pin"-->
+
+            <ImageView
+                android:id="@+id/gj_bj"
+                app:layout_collapseMode="parallax"
+                android:background="@drawable/bj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="top"
+                app:layout_collapseMode="pin">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:text="我的家"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_reminder"
+                            android:layout_marginRight="26dp"
+                            android:src="@drawable/tixing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/iv_server"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/kefu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--<RelativeLayout-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="看看“邻居”家"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="25dp" />-->
+
+
+
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginTop="80dp"-->
+            <!--android:id="@+id/rv_my_home"-->
+            <!--android:layout_width="360dp"-->
+            <!--android:layout_height="match_parent">-->
+        <!--</androidx.recyclerview.widget.RecyclerView>-->
+
+
+
+    <!--</RelativeLayout>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/n_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       >
+
+        <RelativeLayout
+            android:paddingBottom="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="看看“邻居”家"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:id="@+id/rv_my_home"
+                android:layout_width="360dp"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

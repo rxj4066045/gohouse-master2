@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.GuideFragment">
+
+   <ImageView
+       android:id="@+id/guide_image"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scaleType="centerCrop"
+       android:src="@mipmap/start_bg"/>
+
+
+    <TextView
+        android:id="@+id/tv_jumpHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入APP"
+        android:textSize="15dp"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="72dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="28dp"
+        android:paddingLeft="28dp"
+        android:background="@drawable/tv_jumphome_bg"/>
+
+</FrameLayout>

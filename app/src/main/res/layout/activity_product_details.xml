@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".activity.ProductDetailsActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/proDetauls_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior=".behavior.ProductDetailsBehavior">
+
+        <View
+            android:id="@+id/proDetauls_statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/black_cc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:alpha="0"/>
+
+
+        <View
+            android:id="@+id/proDetauls_toolbarBack"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white_cc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:alpha="0"
+            app:layout_constraintTop_toBottomOf="@+id/proDetauls_statusBar" />
+
+
+        <ImageView
+            android:id="@+id/proDetauls_back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/back_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/proDetauls_toolbarBack"
+            app:layout_constraintTop_toTopOf="@+id/proDetauls_toolbarBack" />
+
+
+        <ImageView
+            android:id="@+id/proDetauls_attendant"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/attendant_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/proDetauls_toolbarBack"
+            app:layout_constraintTop_toTopOf="@+id/proDetauls_toolbarBack" />
+
+
+        <ImageView
+            android:id="@+id/proDetauls_share"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/share_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/proDetauls_attendant"
+            app:layout_constraintTop_toBottomOf="@+id/proDetauls_statusBar" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <ImageView
+        android:id="@+id/proDetauls_toTop"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="100dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/totop_icon"
+        android:visibility="gone"/>
+
+
+    <com.gohouse.gohouse.ui.customView.fab.FloatingActionMenu
+        android:id="@+id/proDetauls_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        app:menu_labels_background="@android:color/transparent"
+        app:menu_labels_textColor="@color/gray_33"
+        app:menu_labels_textSize="15dp"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_backgroundColor="@color/white_aa"
+        app:menu_labels_margin="-10dp">
+
+        <com.gohouse.gohouse.ui.customView.fab.FloatingActionButton
+            android:id="@+id/proDetauls_menu6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:fab_label="预约装修"
+            app:fab_size="normal"
+            app:fab_showShadow="true"
+            android:src="@mipmap/makean_icon"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_colorRipple="@android:color/transparent"
+            app:fab_shadowColor="@android:color/transparent"
+            app:fab_colorDisabled="@android:color/transparent"
+            />
+        <com.gohouse.gohouse.ui.customView.fab.FloatingActionButton
+            android:id="@+id/proDetauls_menu5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:fab_label="装修报价"
+            app:fab_size="normal"
+            app:fab_showShadow="true"
+            android:src="@mipmap/refitprice_icon"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_colorRipple="@android:color/transparent"
+            app:fab_shadowColor="@android:color/transparent"
+            app:fab_colorDisabled="@android:color/transparent"
+            />
+
+        <com.gohouse.gohouse.ui.customView.fab.FloatingActionButton
+            android:id="@+id/proDetauls_menu4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:fab_size="normal"
+            app:fab_label="评价"
+            app:fab_showShadow="true"
+            android:src="@mipmap/evaluate_icon"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_colorRipple="@android:color/transparent"
+            app:fab_shadowColor="@android:color/transparent"
+            app:fab_colorDisabled="@android:color/transparent"
+            />
+
+        <com.gohouse.gohouse.ui.customView.fab.FloatingActionButton
+            android:id="@+id/proDetauls_menu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:fab_size="normal"
+            app:fab_label="案例"
+            app:fab_showShadow="true"
+            android:src="@mipmap/case_icon"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_colorRipple="@android:color/transparent"
+            app:fab_shadowColor="@android:color/transparent"
+            app:fab_colorDisabled="@android:color/transparent"
+            />
+
+        <com.gohouse.gohouse.ui.customView.fab.FloatingActionButton
+            android:id="@+id/proDetauls_menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:fab_size="normal"
+            app:fab_label="物料"
+            app:fab_showShadow="true"
+            android:src="@mipmap/sofa_icon"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_colorRipple="@android:color/transparent"
+            app:fab_shadowColor="@android:color/transparent"
+            app:fab_colorDisabled="@android:color/transparent"
+            />
+
+        <com.gohouse.gohouse.ui.customView.fab.FloatingActionButton
+            android:id="@+id/proDetauls_menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:fab_size="normal"
+            app:fab_label="全景"
+            android:src="@mipmap/panorama_icon"
+            app:fab_colorNormal="@android:color/transparent"
+            app:fab_colorRipple="@android:color/transparent"
+            app:fab_shadowColor="@android:color/transparent"
+            app:fab_colorDisabled="@android:color/transparent"
+            />
+    </com.gohouse.gohouse.ui.customView.fab.FloatingActionMenu>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

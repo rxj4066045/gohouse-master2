@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    tools:context=".dialogFragment.SelectPictureFragment">
+
+   <androidx.constraintlayout.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   <android.support.constraint.ConstraintLayout
+       android:id="@+id/selectPictureFragment_bottomTab"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:orientation="horizontal"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:background="#dadada">
+
+
+      <ImageView
+          android:id="@+id/selectPictureFragment_openCamera"
+          android:layout_width="25dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:adjustViewBounds="true"
+          android:src="@mipmap/select_picture_fragment_camera"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/selectPictureFragment_textView_selectAlbum"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          android:ellipsize="end"
+          android:maxWidth="150dp"
+          android:maxLines="1"
+          android:text="相册"
+          android:textColor="@color/select_album_text_color"
+          android:textSize="15dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/selectPictureFragment_textView_confirm"
+          app:layout_constraintStart_toEndOf="@+id/selectPictureFragment_openCamera"
+          app:layout_constraintTop_toTopOf="parent" />
+
+
+      <TextView
+          android:id="@+id/selectPictureFragment_textView_confirm"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginBottom="8dp"
+          android:text="确定"
+          android:textColor="@color/selectpicturefragment_confirm_color"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:background="@drawable/selectpicturefragment_confirm_bg"/>
+
+
+   </android.support.constraint.ConstraintLayout>
+
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/selectPictureFragment_recyclerView"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       app:layout_constraintBottom_toTopOf="@+id/selectPictureFragment_bottomTab"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"/>
+   </androidx.constraintlayout.ConstraintLayout>
+</FrameLayout>

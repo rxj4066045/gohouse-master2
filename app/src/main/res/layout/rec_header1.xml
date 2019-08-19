@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="410dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/rec_header_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="早上好"
+        android:textColor="@color/gray_33"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rec_header_adText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="广告广告广告广告广告广告"
+        android:textColor="@color/gray_33"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_header_time" />
+
+
+    <com.gohouse.gohouse.ui.customView.ShapeImageView
+        android:id="@+id/rec_header_header"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="21dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/header_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rec_header_time"
+        app:siv_shape="Circle" />
+
+
+    <com.gohouse.gohouse.ui.customView.ShapeImageView
+        android:id="@+id/rec_header_ad"
+        android:layout_width="333dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="26dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_header_adText"
+        app:siv_radius="6dp"
+        app:siv_shape="RoundRectangle" />
+
+
+    <LinearLayout
+        android:id="@+id/rec_header_book"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/rec_header_zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_header_ad">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/book_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="预约量房"
+            android:textColor="@color/gray_33"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rec_header_zero"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/rec_header_ensure"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rec_header_book"
+        app:layout_constraintTop_toBottomOf="@+id/rec_header_ad">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/zero_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="零增项"
+            android:textColor="@color/gray_33"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rec_header_ensure"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rec_header_zero"
+        app:layout_constraintTop_toBottomOf="@+id/rec_header_ad">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ensure_icon" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="资金保障"
+            android:textColor="@color/gray_33"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
